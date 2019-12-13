@@ -1,0 +1,122 @@
+[
+    {
+        "role": "Agent Conversion",
+        "key": "agentConversion",
+        "inboundTcp": "135,8095,8990,8995,9090,10000,10001-10030,49152-65535",
+        "inboundUdp": "",
+        "outboundTcp": "135,445,1433,5672,8095,8990,9090,10000,10001-10030,15672,49152-65535",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Agent Core",
+        "key": "agentCore",
+        "inboundTcp": "22,135,8095,8990,8995,9090,10000,10001-10030,49152-65535",
+        "inboundUdp": "",
+        "outboundTcp": "25,135,443,445,1433,5672,6859,6870,8443,8095,8990,8995,9090,10000,10001-10030",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Agent DtSearch",
+        "key": "agentDtSearch",
+        "inboundTcp": "135,6870,8095,8990,8995,9090,10000,10001-10030,49152-65535",
+        "inboundUdp": "",
+        "outboundTcp": "135,445,1433,5672,8095,8990,9090,10000,10001-10030",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Analytics",
+        "key": "analytics",
+        "inboundTcp": "8443,9090,10000",
+        "inboundUdp": "",
+        "outboundTcp": "9090,10000,1433",
+        "outboundUdp": "1434"
+    },
+    {
+        "role": "Data Grid Client",
+        "key": "dataGridClient",
+        "inboundTcp": "9090,9300-9400,10000",
+        "inboundUdp": "",
+        "outboundTcp": "9090,9200,9300-9400,10000",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Data Grid Master",
+        "key": "dataGridMaster",
+        "inboundTcp": "9090,9200,9300-9400,10000",
+        "inboundUdp": "",
+        "outboundTcp": "9200,9300-9400",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Data Grid Monitor",
+        "key": "dataGridMonitor",
+        "inboundTcp": "9090,9200,10000",
+        "inboundUdp": "",
+        "outboundTcp": "9090,10000",
+        "outboundUdp": ""
+    },
+    {
+        "role": "File",
+        "key": "file",
+        "inboundTcp": "445,9090,10000",
+        "inboundUdp": "",
+        "outboundTcp": "9090,10000",
+        "outboundUdp": ""
+    },
+    {
+        "role": "FTP",
+        "key": "ftp",
+        "inboundTcp": "",
+        "inboundUdp": "",
+        "outboundTcp": "22",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Secret Store",
+        "key": "secretStore",
+        "inboundTcp": "9090,10000",
+        "inboundUdp": "",
+        "outboundTcp": "1433,9090,10000",
+        "outboundUdp": "1434"
+    },
+    {
+        "role": "Rabbit MQ",
+        "key": "rabbitMq",
+        "inboundTcp": "5672,9090,10000,15672",
+        "inboundUdp": "",
+        "outboundTcp": "9090,10000",
+        "outboundUdp": ""
+    },
+    {
+        "role": "SQL Server",
+        "key": "sql",
+        "inboundTcp": "135,445,1433,9090,10000,49152-65335",
+        "inboundUdp": "1434",
+        "outboundTcp": "135,9090,10000,49152-65535",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Web",
+        "key": "web",
+        "inboundTcp": "443,8095,8990,8995,9090,10000,10001-10030",
+        "inboundUdp": "",
+        "outboundTcp": "25,445,1433,5672,6859,6870,8092,8095,8443,8990,8995,9090,9200,10000,10001-10030,15672",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Worker Manager SQL Server",
+        "key": "workerManagerSql",
+        "inboundTcp": "135,445,1433,6859,6860,6861,6862,8092,9090,10000,49152-65535",
+        "inboundUdp": "",
+        "outboundTcp": "135,443,445,1433,3389,5672,6860,6861,6862,9090,10000,15672,49152-65535",
+        "outboundUdp": ""
+    },
+    {
+        "role": "Worker",
+        "key": "worker",
+        "inboundTcp": "135,445,3389,6860,6861,6862,9090,10000,49152-65535",
+        "inboundUdp": "",
+        "outboundTcp": "135,443,445,1433,5672,6860,6861,6862,9090,10000,15672,49152-65535",
+        "outboundUdp": ""
+    }
+]
