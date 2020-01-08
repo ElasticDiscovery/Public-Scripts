@@ -57,7 +57,7 @@ function LogLine()
 }
 
 LogLine "----------" $InfoColor
-LogLine "Windows Firewall Utility for Relativity - http://www.elasticdiscovery.com" $InfoColor
+LogLine "Windows Firewall Utility for Relativity - https://www.elasticdiscovery.com" $InfoColor
 Log "For comments, questions, or troubleshooting, please send us an email at " $InfoColor
 LogLine "relativity@elasticdiscovery.com" $DefaultColor
 LogLine "----------" $InfoColor
@@ -193,7 +193,7 @@ if (-not [string]::IsNullOrWhiteSpace($relativityRole.inboundUdp))
     LogSkippedNoPorts $ruleName
 }
 
-$ruleName = $ruleNameTemplate -f $relativityRole.role,"outbound", "Udp"
+$ruleName = $ruleNameTemplate -f $relativityRole.role,"Outbound", "Udp"
 if (-not [string]::IsNullOrWhiteSpace($relativityRole.outboundUdp))
 {
     $ports = $relativityRole.outboundUdp
